@@ -7,18 +7,9 @@
       (gc-cons-threshold (* 1024 1024 1024))
       (file-name-handler-alist nil)
       (config-directory (concat user-emacs-directory "config/")))
-  
+
   (defcustom dotemacs-cache-directory (concat user-emacs-directory ".cache/")
     "The storage location for various persistent files."
-    :group 'dotemacs)
-
-  (defcustom dotemacs-switch-engine
-    'ivy
-    "The primary engine to use for narrowing and navigation."
-    :type '(radio
-            (const :tag "helm" helm)
-            (const :tag "ido" ido)
-            (const :tag "ivy" ivy))
     :group 'dotemacs)
 
   (package-initialize)
@@ -31,6 +22,7 @@ t)
 
 (tool-bar-mode -1)
 (global-linum-mode t)
+(add-hook 'before-save-hook 'whitespace-cleanup)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -61,13 +53,14 @@ t)
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(coffee-tab-width 2)
  '(css-indent-offset 2)
  '(custom-safe-themes
    (quote
     ("bcc6775934c9adf5f3bd1f428326ce0dcd34d743a92df48c128e6438b815b44f" default)))
  '(package-selected-packages
    (quote
-    (projectile-rails smart-tab swiper helm-projectile projectile flymake-coffee flymake-ruby flymake-yaml haml-mode hc-zenburn-theme coffee-mode))))
+    (move-text whitespace-cleanup-mode flx-ido projectile-rails smart-tab swiper helm-projectile projectile flymake-coffee flymake-ruby flymake-yaml haml-mode hc-zenburn-theme coffee-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

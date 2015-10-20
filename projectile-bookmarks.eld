@@ -1,1 +1,1 @@
-("~/dotfiles/" "~/code/LivinX-SG/")
+("~/.emacs.d/" "~/code/LivinX-SG/" "~/code/scribe/" "~/code/online-gown-store/" "~/dotfiles/")
