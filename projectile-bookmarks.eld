@@ -1,1 +1,0 @@
-("~/.emacs.d/" "~/code/LivinX-SG/" "~/code/scribe/" "~/code/online-gown-store/" "~/dotfiles/")

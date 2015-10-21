@@ -24,30 +24,11 @@ t)
 (global-linum-mode t)
 (add-hook 'before-save-hook 'whitespace-cleanup)
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("bcc6775934c9adf5f3bd1f428326ce0dcd34d743a92df48c128e6438b815b44f" default)))
- '(package-selected-packages
-   (quote
-    (helm-projectile projectile flymake-coffee flymake-ruby flymake-yaml haml-mode hc-zenburn-theme coffee-mode))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-
 (require 'cl)
 (cl-loop for file in (directory-files config-directory t)
 	 unless (file-directory-p file)
 	 do (require (intern (file-name-base file)) file)))
 
-(load-theme 'hc-zenburn)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -67,5 +48,6 @@ t)
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(load-theme 'hc-zenburn)
 (put 'dired-find-alternate-file 'disabled nil)
 (setq confirm-kill-emacs 'y-or-n-p)
