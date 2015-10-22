@@ -14,20 +14,16 @@
 
   (package-initialize)
 
-(require 'package)
-(add-to-list
- 'package-archives
- '("melpa" . "http://melpa.org/packages/")
-t)
+  (require 'package)
+  (add-to-list
+   'package-archives
+   '("melpa" . "http://melpa.org/packages/")
+   t)
 
-(tool-bar-mode -1)
-(global-linum-mode t)
-(add-hook 'before-save-hook 'whitespace-cleanup)
-
-(require 'cl)
-(cl-loop for file in (directory-files config-directory t)
-	 unless (file-directory-p file)
-	 do (require (intern (file-name-base file)) file)))
+  (require 'cl)
+  (cl-loop for file in (directory-files config-directory t)
+	   unless (file-directory-p file)
+	   do (require (intern (file-name-base file)) file)))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -49,5 +45,9 @@ t)
  ;; If there is more than one, they won't work right.
  )
 (load-theme 'hc-zenburn)
-(put 'dired-find-alternate-file 'disabled nil)
 (setq confirm-kill-emacs 'y-or-n-p)
+(setq inhibit-startup-message t)
+
+(tool-bar-mode -1)
+(global-linum-mode t)
+(add-hook 'before-save-hook 'whitespace-cleanup)
