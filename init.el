@@ -37,7 +37,7 @@
     ("bcc6775934c9adf5f3bd1f428326ce0dcd34d743a92df48c128e6438b815b44f" default)))
  '(package-selected-packages
    (quote
-    (move-text whitespace-cleanup-mode flx-ido projectile-rails smart-tab swiper helm-projectile projectile flymake-coffee flymake-ruby flymake-yaml haml-mode hc-zenburn-theme coffee-mode))))
+    (magit sr-speedbar ido-vertical-mode ag rainbow-mode move-text whitespace-cleanup-mode flx-ido projectile-rails smart-tab swiper helm-projectile projectile flymake-coffee flymake-ruby flymake-yaml haml-mode hc-zenburn-theme coffee-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
