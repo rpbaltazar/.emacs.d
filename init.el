@@ -35,9 +35,12 @@
  '(custom-safe-themes
    (quote
     ("bcc6775934c9adf5f3bd1f428326ce0dcd34d743a92df48c128e6438b815b44f" default)))
+ '(js-indent-level 2)
+ '(confirm-kill-emacs 'y-or-n-p)
+ '(inhibit-startup-message t)
  '(package-selected-packages
    (quote
-    (magit sr-speedbar ido-vertical-mode ag rainbow-mode move-text whitespace-cleanup-mode flx-ido projectile-rails smart-tab swiper helm-projectile projectile flymake-coffee flymake-ruby flymake-yaml haml-mode hc-zenburn-theme coffee-mode))))
+    (gotham-theme flymake-go go-complete go-errcheck go-mode go-projectile golint magit sr-speedbar ido-vertical-mode ag rainbow-mode move-text whitespace-cleanup-mode flx-ido projectile-rails smart-tab swiper helm-projectile projectile flymake-coffee flymake-ruby flymake-yaml haml-mode hc-zenburn-theme coffee-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -45,8 +48,7 @@
  ;; If there is more than one, they won't work right.
  )
 (load-theme 'hc-zenburn)
-(setq confirm-kill-emacs 'y-or-n-p)
-(setq inhibit-startup-message t)
+
 
 (tool-bar-mode -1)
 (global-linum-mode t)
