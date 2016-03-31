@@ -23,4 +23,6 @@
 	(setq end (point)))
       (goto-char (+ origin (* (length region) arg) arg)))))
 
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 (provide 'handy-functions)
