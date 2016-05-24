@@ -41,12 +41,12 @@
  '(package-selected-packages
    (quote
     (switch-window gotham-theme flymake-go go-complete go-errcheck go-mode go-projectile golint magit sr-speedbar ido-vertical-mode ag rainbow-mode move-text whitespace-cleanup-mode flx-ido projectile-rails smart-tab swiper helm-projectile projectile flymake-coffee flymake-ruby flymake-yaml haml-mode hc-zenburn-theme coffee-mode))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+
+(set-face-attribute 'default nil
+		    :font "mononoki"
+		    :height 140
+		    )
+(set-frame-font "mononoki" nil t)
 (load-theme 'hc-zenburn)
 
 
