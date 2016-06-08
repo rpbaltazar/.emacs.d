@@ -30,6 +30,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(visible-bell 1)
  '(coffee-tab-width 2)
  '(confirm-kill-emacs (quote y-or-n-p))
  '(css-indent-offset 2)
@@ -44,7 +45,7 @@
 
 (set-face-attribute 'default nil
 		    :font "mononoki"
-		    :height 140
+		    :height 150
 		    )
 (set-frame-font "mononoki" nil t)
 (load-theme 'hc-zenburn)
