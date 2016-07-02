@@ -41,14 +41,14 @@
  '(package-selected-packages
    (quote
     (switch-window gotham-theme flymake-go go-complete go-errcheck go-mode go-projectile golint magit sr-speedbar ido-vertical-mode ag rainbow-mode move-text whitespace-cleanup-mode flx-ido projectile-rails smart-tab swiper helm-projectile projectile flymake-coffee flymake-ruby flymake-yaml haml-mode hc-zenburn-theme coffee-mode)))
- '(visible-bell 1))
+ )
 
 (set-face-attribute 'default nil
 		    :font "mononoki"
 		    :height 150
 		    )
 (set-frame-font "mononoki" nil t)
-(load-theme 'hc-zenburn)
+(load-theme 'spacegray)
 
 
 (tool-bar-mode -1)
