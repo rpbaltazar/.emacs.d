@@ -3,7 +3,7 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "go-guru" "go-guru.el" (22426 2509 0 0))
+;;;### (autoloads nil "go-guru" "go-guru.el" (22491 44847 0 0))
 ;;; Generated autoloads from go-guru.el
 
 (autoload 'go-guru-set-scope "go-guru" "\
@@ -97,6 +97,11 @@ Highlight instances of the identifier at point after a short
 timeout.
 
 \(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("go-guru-pkg.el") (22491 44847 306045
+;;;;;;  0))
 
 ;;;***
 
