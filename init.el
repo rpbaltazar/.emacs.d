@@ -44,12 +44,11 @@
  )
 
 (set-face-attribute 'default nil
-		    :font "mononoki"
+		    :font "Fira Code"
 		    :height 150
 		    )
-(set-frame-font "mononoki" nil t)
+(set-frame-font "Fira Code" nil t)
 (load-theme 'spacegray)
-
 
 (tool-bar-mode -1)
 (global-linum-mode t)
