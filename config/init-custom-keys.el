@@ -4,5 +4,6 @@
 (global-set-key [s-down] 'duplicate-current-line-or-region)
 (global-set-key [(control x) (k)] 'kill-this-buffer)
 (global-set-key (kbd "C-x o") 'switch-window)
+(global-set-key (kbd "C-x j d") 'jasmine-coffee/verify-describe)
 
 (provide 'init-custom-keys)
