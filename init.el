@@ -31,6 +31,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(coffee-tab-width 2)
+ '(typescript-indent-level 2)
  '(confirm-kill-emacs (quote y-or-n-p))
  '(css-indent-offset 2)
  '(custom-safe-themes
