@@ -31,7 +31,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(coffee-tab-width 2)
- '(typescript-indent-level 2)
  '(confirm-kill-emacs (quote y-or-n-p))
  '(css-indent-offset 2)
  '(custom-safe-themes
@@ -41,8 +40,8 @@
  '(js-indent-level 2)
  '(package-selected-packages
    (quote
-    (switch-window gotham-theme flymake-go go-complete go-errcheck go-mode go-projectile golint magit sr-speedbar ido-vertical-mode ag rainbow-mode move-text whitespace-cleanup-mode flx-ido projectile-rails smart-tab swiper helm-projectile projectile flymake-coffee flymake-ruby flymake-yaml haml-mode hc-zenburn-theme coffee-mode)))
- )
+    (elixir-mode switch-window gotham-theme flymake-go go-complete go-errcheck go-mode go-projectile golint magit sr-speedbar ido-vertical-mode ag rainbow-mode move-text whitespace-cleanup-mode flx-ido projectile-rails smart-tab swiper helm-projectile projectile flymake-coffee flymake-ruby flymake-yaml haml-mode hc-zenburn-theme coffee-mode)))
+ '(typescript-indent-level 2))
 
 (set-face-attribute 'default nil
 		    :font "Fira Code"
