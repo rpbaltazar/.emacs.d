@@ -43,14 +43,9 @@
  '(js-indent-level 2)
  '(package-selected-packages
    (quote
-     )))
-    (switch-window
-      flymake-go
-      go-complete
-      go-errcheck go-mode go-projectile golint magit sr-speedbar ido-vertical-mode ag
-      rainbow-mode move-text whitespace-cleanup-mode flx-ido projectile-rails smart-tab
-      swiper helm-projectile projectile flymake-coffee flymake-ruby flymake-yaml
-      haml-mode coffee-mode typescript-mode))
+    (markdown-mode flymd typescript-mode flycheck elixir-mode switch-window gotham-theme flymake-go go-complete go-errcheck go-mode go-projectile golint magit sr-speedbar ido-vertical-mode ag rainbow-mode move-text whitespace-cleanup-mode flx-ido projectile-rails smart-tab swiper helm-projectile projectile flymake-coffee flymake-ruby flymake-yaml haml-mode hc-zenburn-theme coffee-mode)))
+ '(typescript-indent-level 2))
+
 (set-face-attribute 'default nil
 		    :font "Fira Code"
 		    :height 150
