@@ -14,12 +14,6 @@
 
   (package-initialize)
 
-  (require 'package)
-  (add-to-list
-   'package-archives
-   '("melpa" . "http://melpa.org/packages/")
-   t)
-
   (require 'cl)
   (cl-loop for file in (directory-files config-directory t)
            unless (file-directory-p file)
@@ -39,9 +33,10 @@
  '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
  '(js-indent-level 2)
+ '(web-mode-markup-indent-offset 2)
  '(package-selected-packages
    (quote
-    (scss-mode vue-mode markdown-mode flymd typescript-mode flycheck elixir-mode switch-window gotham-theme flymake-go go-complete go-errcheck go-mode go-projectile golint magit sr-speedbar ido-vertical-mode ag rainbow-mode move-text whitespace-cleanup-mode flx-ido projectile-rails smart-tab swiper helm-projectile projectile flymake-coffee flymake-ruby flymake-yaml haml-mode hc-zenburn-theme coffee-mode)))
+    (scss-mode markdown-mode flymd typescript-mode flycheck elixir-mode switch-window gotham-theme flymake-go go-complete go-errcheck go-mode go-projectile golint magit sr-speedbar ido-vertical-mode ag rainbow-mode move-text whitespace-cleanup-mode flx-ido projectile-rails smart-tab swiper helm-projectile projectile flymake-coffee flymake-ruby flymake-yaml haml-mode hc-zenburn-theme coffee-mode)))
  '(typescript-indent-level 2)
  '(typescript-tab-width 2))
 
