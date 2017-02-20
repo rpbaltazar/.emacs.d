@@ -4,7 +4,7 @@
 
 ;; Author: Vasilij Schneidermann <v.schneidermann@gmail.com>
 ;; URL: https://github.com/wasamasa/gotham-theme
-;; Package-Version: 20170210.151
+;; Package-Version: 20170216.1547
 ;; Version: 1.1.7
 
 ;; This file is NOT part of GNU Emacs.
@@ -381,6 +381,12 @@ depending on DISPLAY for keys which are either :foreground or
    (rcirc-prompt :foreground orange)
    (rcirc-server :foreground cyan)
    (rcirc-url :inherit link)
+
+   ;; re-builder
+   (reb-match-0 :foreground base0 :background base6)
+   (reb-match-1 :foreground base0 :background green)
+   (reb-match-2 :foreground base0 :background yellow)
+   (reb-match-3 :foreground base0 :background cyan)
 
    ;; ruler
    (ruler-mode-column-number :foreground base6)

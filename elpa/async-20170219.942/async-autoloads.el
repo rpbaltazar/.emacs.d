@@ -3,7 +3,7 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "async" "async.el" (22582 20935 0 0))
+;;;### (autoloads nil "async" "async.el" (22698 25706 0 0))
 ;;; Generated autoloads from async.el
 
 (autoload 'async-start-process "async" "\
@@ -23,30 +23,30 @@ When done, the return value is passed to FINISH-FUNC.  Example:
     (async-start
        ;; What to do in the child process
        (lambda ()
-	 (message \"This is a test\")
-	 (sleep-for 3)
-	 222)
+         (message \"This is a test\")
+         (sleep-for 3)
+         222)
 
        ;; What to do when it finishes
        (lambda (result)
-	 (message \"Async process done, result should be 222: %s\"
-		  result)))
+         (message \"Async process done, result should be 222: %s\"
+                  result)))
 
 If FINISH-FUNC is nil or missing, a future is returned that can
 be inspected using `async-get', blocking until the value is
 ready.  Example:
 
     (let ((proc (async-start
-		   ;; What to do in the child process
-		   (lambda ()
-		     (message \"This is a test\")
-		     (sleep-for 3)
-		     222))))
+                   ;; What to do in the child process
+                   (lambda ()
+                     (message \"This is a test\")
+                     (sleep-for 3)
+                     222))))
 
-	(message \"I'm going to do some work here\") ;; ....
+        (message \"I'm going to do some work here\") ;; ....
 
-	(message \"Waiting on async process, result should be 222: %s\"
-		 (async-get proc)))
+        (message \"Waiting on async process, result should be 222: %s\"
+                 (async-get proc)))
 
 If you don't want to use a callback, and you don't care about any
 return value from the child process, pass the `ignore' symbol as
@@ -68,8 +68,8 @@ returns nil.  It can still be useful, however, as an argument to
 
 ;;;***
 
-;;;### (autoloads nil "async-bytecomp" "async-bytecomp.el" (22582
-;;;;;;  20935 0 0))
+;;;### (autoloads nil "async-bytecomp" "async-bytecomp.el" (22698
+;;;;;;  25706 0 0))
 ;;; Generated autoloads from async-bytecomp.el
 
 (autoload 'async-byte-recompile-directory "async-bytecomp" "\
@@ -96,7 +96,7 @@ Async compilation of packages can be controlled by
 
 ;;;***
 
-;;;### (autoloads nil "dired-async" "dired-async.el" (22582 20935
+;;;### (autoloads nil "dired-async" "dired-async.el" (22698 25706
 ;;;;;;  0 0))
 ;;; Generated autoloads from dired-async.el
 
@@ -116,8 +116,8 @@ Do dired actions asynchronously.
 
 ;;;***
 
-;;;### (autoloads nil nil ("async-pkg.el" "smtpmail-async.el") (22582
-;;;;;;  20935 660278 0))
+;;;### (autoloads nil nil ("async-pkg.el" "smtpmail-async.el") (22698
+;;;;;;  25706 361609 0))
 
 ;;;***
 
