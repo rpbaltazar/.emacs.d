@@ -47,6 +47,7 @@
 (set-frame-font "Fira Code" nil t)
 (load-theme 'spacegray)
 
+(setq ring-bell-function 'ignore)
 (tool-bar-mode -1)
 (global-linum-mode t)
 (add-hook 'before-save-hook 'whitespace-cleanup)
