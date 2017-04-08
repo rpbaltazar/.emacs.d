@@ -446,6 +446,25 @@ Major mode for editing web templates.
 
 ;;;***
 
+;;;### (autoloads nil "yaml-mode/yaml-mode" "yaml-mode/yaml-mode.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from yaml-mode/yaml-mode.el
+
+(let ((loads (get 'yaml 'custom-loads))) (if (member '"yaml-mode/yaml-mode" loads) nil (put 'yaml 'custom-loads (cons '"yaml-mode/yaml-mode" loads))))
+
+(autoload 'yaml-mode "yaml-mode/yaml-mode" "\
+Simple mode to edit YAML.
+
+\\{yaml-mode-map}
+
+\(fn)" t nil)
+
+(add-to-list 'auto-mode-alist '("\\.\\(e?ya?\\|ra\\)ml\\'" . yaml-mode))
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "yaml-mode/yaml-mode" '("yaml-")))
+
+;;;***
+
 ;;;### (autoloads nil nil ("el-get/el-get-install.el" "mmm-mode/mmm-defaults.el")
 ;;;;;;  (0 0 0 0))
 

@@ -29,4 +29,6 @@
  (vue-mode status "installed" recipe
            (:name vue-mode :type github :website "https://github.com/CodeFalling/vue-mode" :description "This is an add-on which defines three ac-sources for the auto-complete package" :pkgname "CodeFalling/vue-mode"))
  (web-mode status "installed" recipe
-           (:name web-mode :description "emacs major mode for editing PHP/JSP/ASP HTML templates (with embedded CSS and JS blocks)" :type github :pkgname "fxbois/web-mode")))
+           (:name web-mode :description "emacs major mode for editing PHP/JSP/ASP HTML templates (with embedded CSS and JS blocks)" :type github :pkgname "fxbois/web-mode"))
+ (yaml-mode status "installed" recipe
+            (:name yaml-mode :description "Simple major mode to edit YAML file for emacs" :type github :pkgname "yoshiki/yaml-mode")))
