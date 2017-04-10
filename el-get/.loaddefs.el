@@ -3,7 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "el-get/el-get" "el-get/el-get.el" (0 0 0 0))
+;;;### (autoloads nil "el-get/el-get" "el-get/el-get.el" (22698 26939
+;;;;;;  0 0))
 ;;; Generated autoloads from el-get/el-get.el
 
 (autoload 'el-get-version "el-get/el-get" "\
@@ -100,28 +101,10 @@ already installed packages is considered.
 
 \(fn &optional SYNC &rest PACKAGES)" nil nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get/el-get" '("el-get-")))
-
-;;;***
-
-;;;### (autoloads nil "el-get/el-get-autoloading" "el-get/el-get-autoloading.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from el-get/el-get-autoloading.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get/el-get-autoloading" '("el-get-")))
-
-;;;***
-
-;;;### (autoloads nil "el-get/el-get-build" "el-get/el-get-build.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from el-get/el-get-build.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get/el-get-build" '("el-get-")))
-
 ;;;***
 
 ;;;### (autoloads nil "el-get/el-get-bundle" "el-get/el-get-bundle.el"
-;;;;;;  (0 0 0 0))
+;;;;;;  (22698 26939 0 0))
 ;;; Generated autoloads from el-get/el-get-bundle.el
 
 (autoload 'el-get-bundle-el-get "el-get/el-get-bundle" "\
@@ -162,7 +145,7 @@ version is used if `el-get-bundle-byte-compile' is non-nil.
 
 \(fn PACKAGE &rest FORM)" nil t)
 
-(function-put 'el-get-bundle 'lisp-indent-function 'defun)
+(put 'el-get-bundle 'lisp-indent-function 'defun)
 
 (autoload 'el-get-bundle! "el-get/el-get-bundle" "\
 Install PACKAGE and run initialization form.
@@ -171,22 +154,12 @@ required.
 
 \(fn PACKAGE &rest ARGS)" nil t)
 
-(function-put 'el-get-bundle! 'lisp-indent-function 'defun)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get/el-get-bundle" '("el-get-bundle-")))
-
-;;;***
-
-;;;### (autoloads nil "el-get/el-get-byte-compile" "el-get/el-get-byte-compile.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from el-get/el-get-byte-compile.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get/el-get-byte-compile" '("el-get-")))
+(put 'el-get-bundle! 'lisp-indent-function 'defun)
 
 ;;;***
 
 ;;;### (autoloads nil "el-get/el-get-check" "el-get/el-get-check.el"
-;;;;;;  (0 0 0 0))
+;;;;;;  (22698 26939 0 0))
 ;;; Generated autoloads from el-get/el-get-check.el
 
 (autoload 'el-get-check-recipe "el-get/el-get-check" "\
@@ -202,36 +175,10 @@ object or a file path.
 
 \(fn FILE-OR-BUFFER)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get/el-get-check" '("el-get-check-")))
-
-;;;***
-
-;;;### (autoloads nil "el-get/el-get-core" "el-get/el-get-core.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from el-get/el-get-core.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get/el-get-core" '("el-get-")))
-
-;;;***
-
-;;;### (autoloads nil "el-get/el-get-custom" "el-get/el-get-custom.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from el-get/el-get-custom.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get/el-get-custom" '("el-get-")))
-
-;;;***
-
-;;;### (autoloads nil "el-get/el-get-dependencies" "el-get/el-get-dependencies.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from el-get/el-get-dependencies.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get/el-get-dependencies" '("el-get-" "topological-sort")))
-
 ;;;***
 
 ;;;### (autoloads nil "el-get/el-get-list-packages" "el-get/el-get-list-packages.el"
-;;;;;;  (0 0 0 0))
+;;;;;;  (22698 26939 0 0))
 ;;; Generated autoloads from el-get/el-get-list-packages.el
 
 (autoload 'el-get-list-packages "el-get/el-get-list-packages" "\
@@ -239,84 +186,10 @@ Display a list of packages.
 
 \(fn)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get/el-get-list-packages" '("el-get-")))
-
 ;;;***
 
-;;;### (autoloads nil "el-get/el-get-methods" "el-get/el-get-methods.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from el-get/el-get-methods.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get/el-get-methods" '("el-get-insecure-check")))
-
-;;;***
-
-;;;### (autoloads nil "el-get/el-get-notify" "el-get/el-get-notify.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from el-get/el-get-notify.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get/el-get-notify" '("el-get-")))
-
-;;;***
-
-;;;### (autoloads nil "el-get/el-get-recipes" "el-get/el-get-recipes.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from el-get/el-get-recipes.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get/el-get-recipes" '("el-get-")))
-
-;;;***
-
-;;;### (autoloads nil "el-get/el-get-status" "el-get/el-get-status.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from el-get/el-get-status.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "el-get/el-get-status" '("el-get-")))
-
-;;;***
-
-;;;### (autoloads nil "mmm-mode/mmm-auto" "mmm-mode/mmm-auto.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from mmm-mode/mmm-auto.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mmm-mode/mmm-auto" '("mmm-")))
-
-;;;***
-
-;;;### (autoloads nil "mmm-mode/mmm-class" "mmm-mode/mmm-class.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from mmm-mode/mmm-class.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mmm-mode/mmm-class" '("mmm-")))
-
-;;;***
-
-;;;### (autoloads nil "mmm-mode/mmm-cmds" "mmm-mode/mmm-cmds.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from mmm-mode/mmm-cmds.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mmm-mode/mmm-cmds" '("mmm-")))
-
-;;;***
-
-;;;### (autoloads nil "mmm-mode/mmm-compat" "mmm-mode/mmm-compat.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from mmm-mode/mmm-compat.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mmm-mode/mmm-compat" '("mmm-" "skeleton-positions")))
-
-;;;***
-
-;;;### (autoloads nil "mmm-mode/mmm-cweb" "mmm-mode/mmm-cweb.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from mmm-mode/mmm-cweb.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mmm-mode/mmm-cweb" '("mmm-cweb-")))
-
-;;;***
-
-;;;### (autoloads nil "mmm-mode/mmm-erb" "mmm-mode/mmm-erb.el" (0
-;;;;;;  0 0 0))
+;;;### (autoloads nil "mmm-mode/mmm-erb" "mmm-mode/mmm-erb.el" (22698
+;;;;;;  26962 0 0))
 ;;; Generated autoloads from mmm-mode/mmm-erb.el
 
 (autoload 'html-erb-mode "mmm-mode/mmm-erb" "\
@@ -329,84 +202,10 @@ Display a list of packages.
 
 \(fn)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mmm-mode/mmm-erb" '("mmm-erb-" "html-erb-after-syntax-propertize")))
-
-;;;***
-
-;;;### (autoloads nil "mmm-mode/mmm-mason" "mmm-mode/mmm-mason.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from mmm-mode/mmm-mason.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mmm-mode/mmm-mason" '("mmm-mason-")))
-
-;;;***
-
-;;;### (autoloads nil "mmm-mode/mmm-mode" "mmm-mode/mmm-mode.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from mmm-mode/mmm-mode.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mmm-mode/mmm-mode" '("mmm-")))
-
-;;;***
-
-;;;### (autoloads nil "mmm-mode/mmm-myghty" "mmm-mode/mmm-myghty.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from mmm-mode/mmm-myghty.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mmm-mode/mmm-myghty" '("mmm-myghty-")))
-
-;;;***
-
-;;;### (autoloads nil "mmm-mode/mmm-noweb" "mmm-mode/mmm-noweb.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from mmm-mode/mmm-noweb.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mmm-mode/mmm-noweb" '("mmm-")))
-
-;;;***
-
-;;;### (autoloads nil "mmm-mode/mmm-region" "mmm-mode/mmm-region.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from mmm-mode/mmm-region.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mmm-mode/mmm-region" '("mmm-")))
-
-;;;***
-
-;;;### (autoloads nil "mmm-mode/mmm-rpm" "mmm-mode/mmm-rpm.el" (0
-;;;;;;  0 0 0))
-;;; Generated autoloads from mmm-mode/mmm-rpm.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mmm-mode/mmm-rpm" '("mmm-rpm-sh-")))
-
-;;;***
-
-;;;### (autoloads nil "mmm-mode/mmm-sample" "mmm-mode/mmm-sample.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from mmm-mode/mmm-sample.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mmm-mode/mmm-sample" '("mmm-")))
-
-;;;***
-
-;;;### (autoloads nil "mmm-mode/mmm-univ" "mmm-mode/mmm-univ.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from mmm-mode/mmm-univ.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mmm-mode/mmm-univ" '("mmm-univ-get-mode")))
-
-;;;***
-
-;;;### (autoloads nil "mmm-mode/mmm-utils" "mmm-mode/mmm-utils.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from mmm-mode/mmm-utils.el
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mmm-mode/mmm-utils" '("mmm-")))
-
 ;;;***
 
 ;;;### (autoloads nil "mmm-mode/mmm-vars" "mmm-mode/mmm-vars.el"
-;;;;;;  (0 0 0 0))
+;;;;;;  (22698 26962 0 0))
 ;;; Generated autoloads from mmm-mode/mmm-vars.el
 
 (autoload 'mmm-add-classes "mmm-mode/mmm-vars" "\
@@ -414,27 +213,10 @@ Add the submode classes CLASSES to `mmm-classes-alist'.
 
 \(fn CLASSES)" nil nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "mmm-mode/mmm-vars" '("mmm-")))
-
-;;;***
-
-;;;### (autoloads nil "vue-mode/vue-mode" "vue-mode/vue-mode.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from vue-mode/vue-mode.el
-
-(autoload 'vue-mode "vue-mode/vue-mode" "\
-
-
-\(fn)" t nil)
-
-(setq mmm-global-mode 'maybe)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "vue-mode/vue-mode" '("vue-")))
-
 ;;;***
 
 ;;;### (autoloads nil "web-mode/web-mode" "web-mode/web-mode.el"
-;;;;;;  (0 0 0 0))
+;;;;;;  (22698 27018 0 0))
 ;;; Generated autoloads from web-mode/web-mode.el
 
 (autoload 'web-mode "web-mode/web-mode" "\
@@ -442,10 +224,9 @@ Major mode for editing web templates.
 
 \(fn)" t nil)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "web-mode/web-mode" '("web-mode-")))
-
 ;;;***
 
+<<<<<<< Updated upstream
 ;;;### (autoloads nil "yaml-mode/yaml-mode" "yaml-mode/yaml-mode.el"
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from yaml-mode/yaml-mode.el
@@ -467,6 +248,18 @@ Simple mode to edit YAML.
 
 ;;;### (autoloads nil nil ("el-get/el-get-install.el" "mmm-mode/mmm-defaults.el")
 ;;;;;;  (0 0 0 0))
+=======
+;;;### (autoloads nil nil ("el-get/el-get-autoloading.el" "el-get/el-get-build.el"
+;;;;;;  "el-get/el-get-byte-compile.el" "el-get/el-get-core.el" "el-get/el-get-custom.el"
+;;;;;;  "el-get/el-get-dependencies.el" "el-get/el-get-install.el"
+;;;;;;  "el-get/el-get-methods.el" "el-get/el-get-notify.el" "el-get/el-get-recipes.el"
+;;;;;;  "el-get/el-get-status.el" "mmm-mode/mmm-auto.el" "mmm-mode/mmm-class.el"
+;;;;;;  "mmm-mode/mmm-cmds.el" "mmm-mode/mmm-compat.el" "mmm-mode/mmm-cweb.el"
+;;;;;;  "mmm-mode/mmm-defaults.el" "mmm-mode/mmm-mason.el" "mmm-mode/mmm-mode.el"
+;;;;;;  "mmm-mode/mmm-myghty.el" "mmm-mode/mmm-noweb.el" "mmm-mode/mmm-region.el"
+;;;;;;  "mmm-mode/mmm-rpm.el" "mmm-mode/mmm-sample.el" "mmm-mode/mmm-univ.el"
+;;;;;;  "mmm-mode/mmm-utils.el") (22698 27018 986494 0))
+>>>>>>> Stashed changes
 
 ;;;***
 
