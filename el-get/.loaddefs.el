@@ -3,7 +3,7 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "el-get/el-get" "el-get/el-get.el" (22698 26939
+;;;### (autoloads nil "el-get/el-get" "el-get/el-get.el" (22765 41622
 ;;;;;;  0 0))
 ;;; Generated autoloads from el-get/el-get.el
 
@@ -104,7 +104,7 @@ already installed packages is considered.
 ;;;***
 
 ;;;### (autoloads nil "el-get/el-get-bundle" "el-get/el-get-bundle.el"
-;;;;;;  (22698 26939 0 0))
+;;;;;;  (22765 41622 0 0))
 ;;; Generated autoloads from el-get/el-get-bundle.el
 
 (autoload 'el-get-bundle-el-get "el-get/el-get-bundle" "\
@@ -159,7 +159,7 @@ required.
 ;;;***
 
 ;;;### (autoloads nil "el-get/el-get-check" "el-get/el-get-check.el"
-;;;;;;  (22698 26939 0 0))
+;;;;;;  (22765 41622 0 0))
 ;;; Generated autoloads from el-get/el-get-check.el
 
 (autoload 'el-get-check-recipe "el-get/el-get-check" "\
@@ -178,7 +178,7 @@ object or a file path.
 ;;;***
 
 ;;;### (autoloads nil "el-get/el-get-list-packages" "el-get/el-get-list-packages.el"
-;;;;;;  (22698 26939 0 0))
+;;;;;;  (22765 41622 0 0))
 ;;; Generated autoloads from el-get/el-get-list-packages.el
 
 (autoload 'el-get-list-packages "el-get/el-get-list-packages" "\
@@ -188,8 +188,8 @@ Display a list of packages.
 
 ;;;***
 
-;;;### (autoloads nil "mmm-mode/mmm-erb" "mmm-mode/mmm-erb.el" (22698
-;;;;;;  26962 0 0))
+;;;### (autoloads nil "mmm-mode/mmm-erb" "mmm-mode/mmm-erb.el" (22765
+;;;;;;  41887 0 0))
 ;;; Generated autoloads from mmm-mode/mmm-erb.el
 
 (autoload 'html-erb-mode "mmm-mode/mmm-erb" "\
@@ -205,7 +205,7 @@ Display a list of packages.
 ;;;***
 
 ;;;### (autoloads nil "mmm-mode/mmm-vars" "mmm-mode/mmm-vars.el"
-;;;;;;  (22698 26962 0 0))
+;;;;;;  (22765 41887 0 0))
 ;;; Generated autoloads from mmm-mode/mmm-vars.el
 
 (autoload 'mmm-add-classes "mmm-mode/mmm-vars" "\
@@ -216,7 +216,7 @@ Add the submode classes CLASSES to `mmm-classes-alist'.
 ;;;***
 
 ;;;### (autoloads nil "web-mode/web-mode" "web-mode/web-mode.el"
-;;;;;;  (22698 27018 0 0))
+;;;;;;  (22765 41930 0 0))
 ;;; Generated autoloads from web-mode/web-mode.el
 
 (autoload 'web-mode "web-mode/web-mode" "\
@@ -226,9 +226,8 @@ Major mode for editing web templates.
 
 ;;;***
 
-<<<<<<< Updated upstream
 ;;;### (autoloads nil "yaml-mode/yaml-mode" "yaml-mode/yaml-mode.el"
-;;;;;;  (0 0 0 0))
+;;;;;;  (22765 41949 0 0))
 ;;; Generated autoloads from yaml-mode/yaml-mode.el
 
 (let ((loads (get 'yaml 'custom-loads))) (if (member '"yaml-mode/yaml-mode" loads) nil (put 'yaml 'custom-loads (cons '"yaml-mode/yaml-mode" loads))))
@@ -242,13 +241,8 @@ Simple mode to edit YAML.
 
 (add-to-list 'auto-mode-alist '("\\.\\(e?ya?\\|ra\\)ml\\'" . yaml-mode))
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "yaml-mode/yaml-mode" '("yaml-")))
-
 ;;;***
 
-;;;### (autoloads nil nil ("el-get/el-get-install.el" "mmm-mode/mmm-defaults.el")
-;;;;;;  (0 0 0 0))
-=======
 ;;;### (autoloads nil nil ("el-get/el-get-autoloading.el" "el-get/el-get-build.el"
 ;;;;;;  "el-get/el-get-byte-compile.el" "el-get/el-get-core.el" "el-get/el-get-custom.el"
 ;;;;;;  "el-get/el-get-dependencies.el" "el-get/el-get-install.el"
@@ -258,8 +252,7 @@ Simple mode to edit YAML.
 ;;;;;;  "mmm-mode/mmm-defaults.el" "mmm-mode/mmm-mason.el" "mmm-mode/mmm-mode.el"
 ;;;;;;  "mmm-mode/mmm-myghty.el" "mmm-mode/mmm-noweb.el" "mmm-mode/mmm-region.el"
 ;;;;;;  "mmm-mode/mmm-rpm.el" "mmm-mode/mmm-sample.el" "mmm-mode/mmm-univ.el"
-;;;;;;  "mmm-mode/mmm-utils.el") (22698 27018 986494 0))
->>>>>>> Stashed changes
+;;;;;;  "mmm-mode/mmm-utils.el") (22765 41950 227089 0))
 
 ;;;***
 
